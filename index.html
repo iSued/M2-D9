@@ -1,0 +1,890 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+
+
+    <title>Hello, world!</title>
+    <style>
+        .owl-carousel {
+            max-width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .card-img-top,
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .card {
+            width: 100;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+        <a class="navbar-brand" href="#">Navbar w/ text</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+            </ul>
+            <span class="navbar-text">
+                Navbar text with an inline element
+            </span>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid mbd-5">
+        <div class="container">
+            <h1 class="display-4">Fluid jumbotron</h1>
+            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        </div>
+    </div>
+
+    <!-- <div class="container"> versione con grid, ma uso quella con jquery
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+            <div class="col">
+                1 of 3
+            </div>
+            <div class="col">
+                2 of 3
+            </div>
+            <div class="col">
+                3 of 3
+            </div>
+            <div class="col">
+                3 of 3
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div> -->
+    <div class="container mb-5 mt-5 text-center">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#favAlbums"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <h2 class=>Favourite Albums</h2>
+    </div>
+    <div class="container">
+
+
+        <div class="container-fluid d-flex" id="favAlbums">
+            <div class=" owl-carousel owl-theme mt-5">
+                <div class="item">
+                    <div class="card">
+                        <img src="images/1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Playlist</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <h6>GENRE</h6>
+                                <p>HIP-HOP/RAP</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h6>AUTHOR</h6>
+                                <p>Salmo</p>
+                            </li>
+                            <li class="list-group-item">
+                                <h6>DURATION</h6>
+                                <p>38 min</p>
+                            </li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link fas fa-stop"></a>
+                            <a href="#" class="card-link fas fa-play"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="images/2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">The Eminem Show</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <h6>GENRE</h6>
+                                    <p>HIP-HOP/RAP</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>AUTHOR</h6>
+                                    <p>Eminem</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>DURATION</h6>
+                                    <p>1h 17min</p>
+
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link fas fa-stop"></a>
+                                <a href="#" class="card-link fas fa-play"></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="images/3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">The Marshall Mathers LP</h5>
+
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <h6>GENRE</h6>
+                                    <p>HIP-HOP/RAP</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>AUTHOR</h6>
+                                    <p>
+                                        Eminem
+                                    </p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>DURATION</h6>
+                                    <p>1h 38min</p>
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link fas fa-stop"></a>
+                                <a href="#" class="card-link fas fa-play"></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="images/4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Encore</h5>
+
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <h6>GENRE</h6>
+                                    <p>HIP-HOP/RAP</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>AUTHOR</h6>
+                                    <p>Eminem</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>DURATION</h6>
+                                    <p>1h 17min</p>
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link fas fa-stop"></a>
+                                <a href="#" class="card-link fas fa-play"></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="images/5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Iron Man 2</h5>
+
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <h6>GENRE</h6>
+                                    <p>HARD ROCK</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>AUTHOR</h6>
+                                    <p>AC/DC</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>DURATION</h6>
+                                    <p>1h 3min</p>
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link fas fa-stop"></a>
+                                <a href="#" class="card-link fas fa-play"></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="images/6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Back In Black</h5>
+
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <h6>GENRE</h6>
+                                    <p>HARD ROCK</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>AUTHOR</h6>
+                                    <p>AC/DC</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>DURATION</h6>
+                                    <p>42min</p>
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link fas fa-stop"></a>
+                                <a href="#" class="card-link fas fa-play"></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="images/7.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tattle Tales</h5>
+
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <h6>GENRE</h6>
+                                    <p>HIP-HOP/RAP</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>AUTHOR</h6>
+                                    <p>6ix9ine</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>DURATION</h6>
+                                    <p>31min</p>
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link fas fa-stop"></a>
+                                <a href="#" class="card-link fas fa-play"></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="images/8.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Origins (Deluxe)</h5>
+
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <h6>GENRE</h6>
+                                    <p>Alternative</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>AUTHOR</h6>
+                                    <p>Imagine Dragons</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>DURATION</h6>
+                                    <p>52min</p>
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link fas fa-stop"></a>
+                                <a href="#" class="card-link fas fa-play"></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="images/9.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Evolve</h5>
+
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <h6>GENRE</h6>
+                                    <p>Alternative</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>AUTHOR</h6>
+                                    <p>Imagine Dragons</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>DURATION</h6>
+                                    <p>43min</p>
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link fas fa-stop"></a>
+                                <a href="#" class="card-link fas fa-play"></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="images/10.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Surface Sounds</h5>
+
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <h6>GENRE</h6>
+                                    <p>Alternative</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>AUTHOR</h6>
+                                    <p>Kaleo</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>DURATION</h6>
+                                    <p>16min</p>
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link fas fa-stop"></a>
+                                <a href="#" class="card-link fas fa-play"></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="images/11.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">A / B </h5>
+
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <h6>GENRE</h6>
+                                    <p>Alternative</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>AUTHOR</h6>
+                                    <p>Kaleo</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>DURATION</h6>
+                                    <p>42min</p>
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link fas fa-stop"></a>
+                                <a href="#" class="card-link fas fa-play"></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="images/12.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Me Against the World</h5>
+
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <h6>GENRE</h6>
+                                    <p>HIP-HOP/RAP</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>AUTHOR</h6>
+                                    <p>2Pac</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>DURATION</h6>
+                                    <p>1h 16min</p>
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link fas fa-stop"></a>
+                                <a href="#" class="card-link fas fa-play"></a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-5 mt-5 text-center self-align-center">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#theAlb"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <h2>The Album</h2>
+    </div>
+    <div class="container d-flex justify-content-around mb-5 mt-5" id="theAlb">
+        <div class="row p2">
+            <div class="col-8">
+                <div class="card" ">
+    <img src=" images/1.jpg" class="card-img-top" alt="...">
+
+                </div>
+            </div>
+            <div class="col-4">
+
+                <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="100%"
+                    style="width:100%;max-width:660px;overflow:hidden;background:transparent;"
+                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+                    src="https://embed.music.apple.com/it/album/playlist/1438143525"></iframe>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container mb-5 mt-5 text-center">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#worstAlb"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <h2>Worst Albums!</h2>
+    </div>
+    <div class="container">
+
+
+        <div class="container-fluid" id="worstAlb">
+            <div class=" owl-carousel owl-theme mt-5">
+                <div class="item">
+                    <div class="card">
+                        <img src="images/13.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Changes</h5>
+
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <h6>GENRE</h6>
+                                    <p>POP</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>AUTHOR</h6>
+                                    <p>Justin Bieber</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>DURATION</h6>
+                                    <p>51min</p>
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link fas fa-stop"></a>
+                                <a href="#" class="card-link fas fa-play"></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="images/14.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Purpose</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <h6>GENRE</h6>
+                                    <p>POP</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>AUTHOR</h6>
+                                    <p>Justin Bieber</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>DURATION</h6>
+                                    1h 10min
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link fas fa-stop"></a>
+                                <a href="#" class="card-link fas fa-play"></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="images/15.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Believe Acoustic</h5>
+
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <h6>GENRE</h6>
+                                    <p>POP</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>AUTHOR</h6>
+                                    <p>Justin Bieber</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>DURATION</h6>
+                                    <p>36 min</p>
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link fas fa-stop"></a>
+                                <a href="#" class="card-link fas fa-play"></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="images/16.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Believe (Deluxe Edition)</h5>
+
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <h6>GENRE</h6>
+                                    <p>POP</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>AUTHOR</h6>
+                                    <p>Justin Bieber</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>DURATION</h6>
+                                    <p>1h 4min</p>
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link fas fa-stop"></a>
+                                <a href="#" class="card-link fas fa-play"></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="images/17.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Under the Mistletoe</h5>
+
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <h6>GENRE</h6>
+                                    <p>POP</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>AUTHOR</h6>
+                                    <p>Justin Bieber</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>DURATION</h6>
+                                    <p>38min</p>
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link fas fa-stop"></a>
+                                <a href="#" class="card-link fas fa-play"></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="images/18.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">My Worlds Acoustic</h5>
+
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <h6>GENRE</h6>
+                                    <p>POP</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>AUTHOR</h6>
+                                    <p>Justin Bieber</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>DURATION</h6>
+                                    <p>38 min</p>
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link fas fa-stop"></a>
+                                <a href="#" class="card-link fas fa-play"></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="images/19.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">My World 2.0</h5>
+
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <h6>GENRE</h6>
+                                    <p>POP</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>AUTHOR</h6>
+                                    <p>Justin Bieber</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>DURATION</h6>
+                                    <p>41min</p>
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link fas fa-stop"></a>
+                                <a href="#" class="card-link fas fa-play"></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="images/20.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">My Worlds - The Collection</h5>
+
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <h6>GENRE</h6>
+                                    <p>POP</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>AUTHOR</h6>
+                                    <p>Justin Bieber</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>DURATION</h6>
+                                    <p>1h 56min</p>
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link fas fa-stop"></a>
+                                <a href="#" class="card-link fas fa-play"></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="images/21.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">My Everything</h5>
+
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <h6>GENRE</h6>
+                                    <p>POP</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>AUTHOR</h6>
+                                    <p>Ariana Grande</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>DURATION</h6>
+                                    <p>1h 2min</p>
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link fas fa-stop"></a>
+                                <a href="#" class="card-link fas fa-play"></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="images/22.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Yours Truly</h5>
+
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <h6>GENRE</h6>
+                                    <p>POP</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>AUTHOR</h6>
+                                    <p>Ariana Grande</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>DURATION</h6>
+                                    <p>50min</p>
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link fas fa-stop"></a>
+                                <a href="#" class="card-link fas fa-play"></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="images/23.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Dangerous Woman</h5>
+
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <h6>GENRE</h6>
+                                    <p>POP</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>AUTHOR</h6>
+                                    <p>Ariana Grande</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>DURATION</h6>
+                                    <p>56min</p>
+
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link fas fa-stop"></a>
+                                <a href="#" class="card-link fas fa-play"></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="images/24.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Sweetener</h5>
+
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <h6>GENRE</h6>
+                                    <p>POP</p>
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>AUTHOR</h6>
+                                    <p>Ariana Grande</p>
+
+                                </li>
+                                <li class="list-group-item">
+                                    <h6>DURATION</h6>
+                                    <p>47min</p>
+                                </li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link fas fa-stop"></a>
+                                <a href="#" class="card-link fas fa-play"></a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-5 mb-5 ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#otherAlb"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <h2>Other Albums</h2>
+    </div>
+    <div class="container d-flex p-2">
+        <div class=" owl-carousel owl-theme mt-5 d-flex p-2" id="otherAlb">
+            <div class="item p-2"><img src="images/25.jpg" alt=""></div>
+            <div class="item p-2"><img src="images/26.jpg" alt=""></div>
+            <div class="item p-2"><img src="images/27.jpg" alt=""></div>
+            <div class="item p-2"><img src="images/28.jpg" alt=""></div>
+            <div class="item p-2"><img src="images/29.jpg" alt=""></div>
+            <div class="item p-2"><img src="images/30.jpg" alt=""></div>
+            <div class="item p-2"><img src="images/31.jpg" alt=""></div>
+            <div class="item p-2"><img src="images/32.jpg" alt=""></div>
+            <div class="item p-2"><img src="images/33.jpg" alt=""></div>
+            <div class="item p-2"><img src="images/34.jpg" alt=""></div>
+            <div class="item p-2"><img src="images/35.jpg" alt=""></div>
+            <div class="item p-2"><img src="images/36.jpg" alt=""></div>
+            <div class="item p-2"><img src="images/37.jpg" alt=""></div>
+            <div class="item p-2"><img src="images/38.jpg" alt=""></div>
+            <div class="item p-2"><img src="images/39.jpg" alt=""></div>
+            <div class="item p-2"><img src="images/40.jpg" alt=""></div>
+            <div class="item p-2"><img src="images/41.jpg" alt=""></div>
+            <div class="item p-2"><img src="images/42.jpg" alt=""></div>
+            <div class="item p-2"><img src="images/43.jpg" alt=""></div>
+            <div class="item p-2"><img src="images/44.jpg" alt=""></div>
+
+        </div>
+    </div>
+
+    <div class="container">
+
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script type="text/javascript" src="OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+    <script type="text/javascript" src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop: false,
+            margin: 10,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+
+    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
